@@ -7,11 +7,11 @@ allowed-tools:
   - create_worker_reference_letter
 tool-wids:
   - name: find_staffing_workers
-    wid: '30aeb92af72e100063e2955a0eff0000'
+    wid: '`<WID>`'
   - name: list_reference_letter_templates
-    wid: '30aeb92af72e1000917e6e2fa2970000'
+    wid: '`<WID>`'
   - name: create_worker_reference_letter
-    wid: '30aeb92af72e100066714cdf6fcd0000'
+    wid: '`<WID>`'
 ---
 
 # Reference Letter Request Skill
