@@ -1,4 +1,4 @@
-# Workday Reference Letter Agent
+# Reference Letter Agent
 
 A simple custom agent built to request reference letter using the Developer Agent (WDCLI in VS Code), deployed to a personal tenant, configured in ASOR, and pushed an external agent from Bruno to expose it through MCP so it can be used from Claude and other MCP-compatible applications.
 
