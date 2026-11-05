@@ -10,7 +10,7 @@ A simple custom agent built to request reference letter using the Developer Agen
 | Deployment target | Personal Workday tenant |
 | Configuration | ASOR (agent configuration and tool security) |
 | Exposure | MCP (tested with Claude; external agent pushed via Bruno) |
-| Status | Working in personal tenant |
+| Status | Working in personal tenant in Agent Chat & in Claude |
 
 ## Architecture
 
