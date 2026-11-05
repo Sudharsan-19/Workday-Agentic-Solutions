@@ -22,8 +22,8 @@ Workday-Agentic-Solutions/
 
 | Area | Solution | Status | Docs |
 |------|----------|--------|------|
-| Developer Agent | Workday Reference Letter Agent | Active | [README](Developer-Agent/Workday-Reference-Letter-Agent/README.md) |
-| Sana | Reserved for future solutions | Empty | — |
+| Developer Agent | Workday Reference Letter Agent | Active | [README](Developer-Agent/Reference-Letter-Agent/README.md) |
+| Sana | Coming Soon | Empty | — |
 
 ## How Each Solution Is Organized
 

@@ -1,0 +1,49 @@
+---
+name: reference-letter-skill
+description: 'Request reference letters for workers'
+allowed-tools:
+  - find_staffing_workers
+  - list_reference_letter_templates
+  - create_worker_reference_letter
+tool-wids:
+  - name: find_staffing_workers
+    wid: '30aeb92af72e100063e2955a0eff0000'
+  - name: list_reference_letter_templates
+    wid: '30aeb92af72e1000917e6e2fa2970000'
+  - name: create_worker_reference_letter
+    wid: '30aeb92af72e100066714cdf6fcd0000'
+---
+
+# Reference Letter Request Skill
+
+Help users request reference letters for themselves or other workers they have access to.
+
+## Steps
+
+1. **Find the worker**: If the user wants a reference letter for someone else, use find_staffing_workers to locate them. If they want one for themselves, use the processing user's staffing worker information.
+
+2. **List available templates**: Use list_reference_letter_templates to show the user what reference letter templates are available.
+
+3. **Get template selection**: Ask the user to choose which template they want to use from the available options.
+
+4. **Get language preference**: Ask the user which language they want for the reference letter (provide common options like English, Spanish, French, etc. and get the language WID).
+
+5. **Confirm before submitting**: Before creating the request, present a clear summary to the user showing:
+   - The worker the letter is for
+   - The selected template
+   - The selected language
+   Ask the user to confirm they want to proceed. Do not call `create_worker_reference_letter` until the user explicitly confirms.
+
+6. **Create the request**: Use create_worker_reference_letter with:
+   - The worker's staffing WID
+   - The selected template ID
+   - The selected language ID
+   
+6. **Confirm success**: Let the user know their reference letter request has been created successfully and provide the event details.
+
+## Error Handling
+
+- If the user lacks access to request reference letters, explain they need the Reference Letter Request security domain.
+- If a worker is not eligible (terminated or inactive), explain they cannot request letters for that worker.
+- If no templates are available, explain that the tenant administrator needs to configure reference letter templates.
+- Validate all required information (worker, template, language) before making the create request.
