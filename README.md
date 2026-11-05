@@ -16,6 +16,7 @@ Workday-Agentic-Solutions/
 │       ├── AGENT_DEFINITION.md            # What the agent is and how it is configured
 │       └── AGENT_SKILLS.md                # Skills the agent exposes and how they run
 └── Sana/                                  # Reserved for Sana solutions (empty for now)
+    ├── README.md                          # Index of Sana examples
 ```
 
 ## Solution Index
