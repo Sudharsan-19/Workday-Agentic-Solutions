@@ -19,10 +19,10 @@ VS Code + WDCLI (Developer Agent)
         │  build & deploy
         ▼
 Personal Workday Tenant ── Agent configured in ASOR
-        │  tool security & stop gates
+        │  tool security 
         ▼
 External Agent push from Bruno
-        │  tool security & stop gates
+        │  tool security & credentials retrieval
         ▼
 Agent Gateway (ODP endpoint)
         │  MCP server
